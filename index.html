@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>3D Taiwan Model</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3 style="font-size: 38px">A 3D Kinematic Plate Model Including Long-term and Interseismic Vertical Deformation in Taiwan</h3>
+					<span style="font-size:16px;"><a href="https://evan-pc-chiang.github.io/" target=”_blank”>Ping-Chen Chiang</a><sup>1</sup>, <a href="https://earth.indiana.edu/directory/faculty/johnson-kaj.html" target=”_blank”>Kaj M. Johnson</a><sup>1</sup>, <a href="https://www.geomatics.ncku.edu.tw/english/member.php?id=23&tpl=6" target=”_blank”>Kuo-En Ching</a><sup>2</sup>, <a href="https://earth.indiana.edu/directory/faculty/yanites-brian.html" target=”_blank”>Brian J. Yanites</a><sup>1</sup>, <a href="https://raychuang0.wixsite.com/ntugeog" target=”_blank”>Ray Y. Chuang</a><sup>3</sup></span><br>
+					<ol>
+						<li style="font-size: 12px";>Department of Earth & Atmospheric Science, Indiana University Bloomington, Indiana, USA</li>
+						<li style="font-size: 12px";>Department of Geomatics, National Cheng Kung University, Tainan, Taiwan</li>
+						<li style="font-size: 12px";>Department of Geography, National Taiwan University, Taipei, Taiwan</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Introduction</h3>
+					<ul style="">
+						<li>Examine deformation over the <b>millennial times scale</b>.</li>
+						<li>Estimating fault <b>slip rates</b> and <b>interseismic locking</b> using a 3-D lithospheric kinematic model.</li>
+						<li>Reconcile short-term GPS, leveling rates with long-term <b>geologic uplift rates</b> to constrain our inversion.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Tectonic Setting</h3>
+					<div class="table-container">
+						<div class="table-item left" style="width: 50%">
+							<img src="dist/img/TW_setting.jpg" style="max-height: 600px">
+
+						</div>
+						<div class="table-item right" style="width: 50%">
+							<ul style="">
+								<li>Oblique convergence between the <b>Luzon volcanic arc</b> and the continental margin of the <b>Eurasian plate</b>.</li>
+								<li>Philippine Sea plate <b>overrides</b> Eurasian plate in southern Taiwan but <b>subducts underneath</b> Eurasia plate in northern Taiwan.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Fault Geometry</h3>
+					<div class="table-container">
+						<div class="table-item left">
+							<iframe data-autoplay height="590" width="590" src="dist/iframe/depth.html" frameborder="0"></iframe>
+						</div>
+						<div class="table-item right">
+							<p align="left">56 Faults:</p>
+							<ul style="">
+								<li><b>45</b> from Taiwan Earthquake Model (<a href="https://tem.tw/TEM2020/" style="color: white" target=”_blank”>TEM</a>)</li>
+								<li><b>1</b> from <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019JB018561" style="color: white" target=”_blank”>Chen et al. (2020)</a></li>
+								<li><b>2</b> Off Shore Fault</li>
+								<li><b>4</b> Trenches & Trough</li>
+								<li><b>4</b> Loading Fault</li>
+								<li><b>1</b> Detachment</li>
+							</ul>
+						</div>
+					</div>
+					<aside class="notes">
+						Faults are embedded in a 40-km-thick elastic crustal plate overlying an inviscid mantle. Most of the faults acquire from Shyu et al. 2016 Taiwan Earthquake Model. The hoping section (North CRF) acquires from Chen et al., 2020. Detachment from 5 km to 40 km acquires from Carena et al., 2002. We also extend the Okinawa trough, Ryukyu trench, and malila trench for couple thousand kilometers to make sure the total convergence rate is about 80 mm/yr cross island.
+					</aside>
+				</section>
+				<section>
+					<h3>Data</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 33%">
+							<img src="dist/img/AGU_data_hor.jpg" style="max-height: 600px">
+						</div>
+						<div class="table-item" style="width: 33%">
+							<img src="dist/img/AGU_data_ST.jpg" style="max-height: 600px">
+						</div>
+						<div class="table-item" style="width: 33%">
+							<img src="dist/img/AGU_data_LT.jpg" style="max-height: 600px">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Model</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 60%">
+							<img src="dist/img/model.png" style="max-height: 600px"><br>
+							<p style="font-size: 16px;">Illustration of elastic plate flexure model (<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JB019672" target=”_blank”>Johnson et al., 2020</a>).</p>
+						</div>
+						<div class="table-item" style="width: 40%; padding-left: 20px">
+							<ul style="">
+								<li>An <b>elastic upper crust</b> overlying an <b>inviscid lower crust and mantle</b>.</li>
+								<li>Assume fully <b>relaxed in long-term</b> and fully <b>elastic in short term</b>.</li>
+								<li>Imposed slip rates on fault for long-term deformation and add <b>back slip</b> for interseismic deformation.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Inverse Method</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 50%">
+							\[
+							p(s,r,L,\sigma|d)\varpropto p(d|s,r,L,\sigma)p(s,r,L,\sigma) \\
+							\]
+							where $ d $: Observation, $ \sigma $: error $ \\$
+							$ s $: Strike-slip, $ r $: Dip-slip,
+							$ L $: Locking area
+							<p style="font-size: 16px;">(<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020JB019672" target=”_blank”>Johnson et al., 2020</a>)</p>
+						</div>
+						<div class="table-item" style="width: 50%; padding-left: 20px">
+							<ul style="">
+								<li>$ p(d|s,r,L,\sigma) $ is likelihood.</li>
+								<li>$ p(s,r,L,\sigma) $ is prior probability.</li>
+								<li>We apply <b>probabilistic inversion</b> using <b>Monte Carlo Metropolis sampling</b> to estimate the posterior distribution on the left.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Model Result</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 33%">
+							<img src="dist/img/AGU_result_hor_st.jpg" style="max-height: 600px">
+						</div>
+						<div class="table-item" style="width: 33%">
+							<img src="dist/img/AGU_result_ver_st.jpg" style="max-height: 600px">
+						</div>
+						<div class="table-item" style="width: 33%">
+							<img src="dist/img/AGU_result_ver_lt.jpg" style="max-height: 600px">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Model Result</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 50%">
+							<iframe data-autoplay height="350" width="350" src="dist/iframe/st_ew.html" frameborder="0"></iframe>
+							<iframe data-autoplay height="350" width="350" src="dist/iframe/st_ns.html" frameborder="0"></iframe><br>
+							<iframe data-autoplay height="350" width="350" src="dist/iframe/st_up.html" frameborder="0"></iframe>
+							<iframe data-autoplay height="350" width="350" src="dist/iframe/lt_up.html" frameborder="0"></iframe>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Model Parameters</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 50%">
+							<iframe data-autoplay height="590" width="590" src="dist/iframe/dip_slip.html" frameborder="0"></iframe>
+						</div>
+						<div class="table-item" style="width: 50%; padding-left: 20px">
+							<iframe data-autoplay height="590" width="590" src="dist/iframe/strike_slip.html" frameborder="0"></iframe>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Model Parameters</h3>
+					<div class="table-container">
+						<div class="table-item" style="width: 50%">
+							<iframe data-autoplay height="590" width="590" src="dist/iframe/locking.html" frameborder="0"></iframe>
+						</div>
+						<div class="table-item" style="width: 50%; padding-left: 20px">
+							<img src="dist/img/AGU_result_det_velo.jpg" style="max-height: 600px">
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3>Conclusion</h3>
+					<ul style="">
+						<li>Combined <b>present-day vertical and horizontal motions</b> with <b>geologic measurements of uplift rate</b> into a model across the <b>Taiwan mountain belt</b>. </li>
+						<li>Use probabilistic inversion for <b>fault slip rates</b> and <b>interseismic locking areas</b> by adopt <b>MCMC</b> sampling.</li>
+						<li>Explain about <b>70% of geodetic data</b> and over <b>80% of long-term vertical geologic rates</b>.</li>
+						<li>Our inversions generally require <b>higher slip rates</b> on faults than inferred previously from geologic data.</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: 1200,
+				height: 800,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+			});
+		</script>
+	</body>
+</html>
